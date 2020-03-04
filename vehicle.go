@@ -49,19 +49,20 @@ const (
 type EuroStatus string
 
 const (
-	EuroStatus6 = "Euro VI"
-	EuroStatus5 = "Euro 5"
-	EuroStatus4 = "Euro 4"
-	EuroStatus3 = "Euro 3"
-	EuroStatus2 = "Euro 2"
-	EuroStatus1 = "Euro 1"
+	EuroStatus6 EuroStatus = "Euro 6"
+	EuroStatus5 EuroStatus = "Euro 5"
+	EuroStatus4 EuroStatus = "Euro 4"
+	EuroStatus3 EuroStatus = "Euro 3"
+	EuroStatus2 EuroStatus = "Euro 2"
+	EuroStatus1 EuroStatus = "Euro 1"
 )
 
 type FuelType string
 
 const (
-	FuelTypePetrol FuelType = "PETROL"
-	FuelTypeDiesel FuelType = "DIESEL"
+	FuelTypePetrol   FuelType = "PETROL"
+	FuelTypeDiesel   FuelType = "DIESEL"
+	FuelTypeElectric FuelType = "ELECTRICITY"
 )
 
 type VehicleRequest struct {
