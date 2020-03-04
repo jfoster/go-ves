@@ -42,3 +42,4 @@
 # End of https://www.gitignore.io/api/visualstudiocode
 
 .envrc
+/test
