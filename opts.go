@@ -13,3 +13,15 @@ func SetKey(key string) OptFunc {
 		c.Key = key
 	}
 }
+
+func SetBaseURL(url string) OptFunc {
+	return func(c *Client) {
+		c.BaseURL = url
+	}
+}
+
+func SetVersion(v int) OptFunc {
+	return func(c *Client) {
+		c.Version = v
+	}
+}
