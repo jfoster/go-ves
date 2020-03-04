@@ -1,8 +1,8 @@
 package ves
 
 const (
-	VESAPIUrl     = "https://driver-vehicle-licensing.api.gov.uk/vehicle-enquiry"
 	VESAPIVersion = 1
 
-	UATVESAPIUrl = "https://uat.driver-vehicle-licensing.api.gov.uk/vehicle-enquiry"
+	VESAPIUrl    = "https://driver-vehicle-licensing.api.gov.uk/vehicle-enquiry"
+	VESAPIUATUrl = "https://uat.driver-vehicle-licensing.api.gov.uk/vehicle-enquiry"
 )
