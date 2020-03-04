@@ -83,6 +83,15 @@ func (r *Request) Do(v interface{}) (*http.Response, error) {
 	}
 	defer resp.Body.Close()
 
+	if resp.StatusCode != 200 {
+		var errResp ErrorResponse
+		err := json.NewDecoder(resp.Body).Decode(&errResp)
+		if err != nil {
+			return resp, err
+		}
+		return resp, errResp.Errors[0]
+	}
+
 	if v != nil {
 		return resp, json.NewDecoder(resp.Body).Decode(v)
 	}
